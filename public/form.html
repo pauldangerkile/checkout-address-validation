@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
+  <link href="http://www.redbubble.com/stylesheets/compiled/screen.css?29564dc17149893c41ea4daec317ede2575c6a37" rel="stylesheet" type="text/css"/>
   <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD9ew6oxqnaSQPwGiASNJN80M7ofLdmEsE&sensor=false"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="jquery.infieldlabel.js"></script>
+  <script type="text/javascript" src="jquery.qtip.js"></script>
   <script type="text/javascript" src="check.js"></script>
 </head>
-<body>
-  <form accept-charset="UTF-8" action="" class="step-form" method="post">
+<body class="checkouts">
+  <form accept-charset="UTF-8" action="" class="cart-section" method="post">
     <section>
       <h4>Recipient Details</h4>
       <div class="input-wrapper">
@@ -304,5 +307,9 @@
     <button id="check">Check Address</button>
     <button id="fill">Fill Address</button>
   </form>
+  <div style="clear: both">
+    <div id="map-canvas" style="display: none; width: 600px; height: 300px;"></div>
+    <div id="messages" style="display: none; color: #C2002A;"></div>
+  </div>
 </body>
 </html>
