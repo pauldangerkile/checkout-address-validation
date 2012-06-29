@@ -17,7 +17,7 @@ function showMap(location, showPin) {
       zoom: 16,
       disableDefaultUI: true,
       zoomControl: true,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
+      mapTypeId: google.maps.MapTypeId.ROADMAP
     }
     GOOGLE_MAP = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
   } else {
